@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Hello template{{ title }}</h1>
+<h2>{{ description }}</h2>
+    <h3>{{ object.price }}</h3>
+    <h4>{{ object.salgysy }}</h4>
+    <h4>{{ object.surat }}</h4>
+    <h2>{{ object.maglumat }}</h2>
+    <h4>{{ object.city }}</h4>
+    <h1>{{ object.etraby }}
+    <h2>{{ object.telefony }} shu yerde</h2>
+    <h2>{{ object.ady }} </h2>
+
+
+
+
+   <p> {% if description != None and description != ''%} {{ description }} {% else %} This is else statement {% endif %} </p>
+    <p>{% if maglumat %} {{ maglumat }}{% else %}Bu else commment{% endif %} </p>
+    <p>{% if city %} {{ city }} {% else %}Bu else city barada{% endif %}</p>
+    <h1>{% if etraby %}{{ etraby }}{% else %}Bu else etraby{% endif %}</h1>
+
+
+
+
+
+
+{% endblock %}
+
+<h3>tytytytytyty</h3>

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+Hello
+{% block content %}
+<h1>About</h1>
+<h1>Hello People</h1>
+    <h3>{{ my_text3|capfirst }}</h3>
+{{ request.user.is_authenticated }}
+<h1>Hello People</h1>
+<h1>Hello People</h1>
+    <h1>birinji</h1>
+    {{ my_text3 }}, {{ my_number3 }}, {{ my_list }}
+    <h1>Ikinji</h1>
+    <ul>
+    {% for a in my_list %}
+        <li>
+            {{ a|center:"15"}}
+        </li>
+    {% endfor %}
+    </ul>
+
+
+<h1>Uchunji</h1>
+    {% for a in my_list %}
+        {% if a == 223 %}
+            {{ a|add:10 }}
+        {% elif a == 'ABC' %}
+            this is not a network
+        {% else %}
+            {{ a }}
+        {% endif %}
+    {% endfor %}
+    <h1>Dordunji</h1>
+{{ my_html|title }}
+
+
+
+{% endblock %}
+
+
+

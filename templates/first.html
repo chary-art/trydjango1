@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <h1>First html</h1>
+    <h1>Hello People</h1>
+    {{ request.user.is_authenticated }}
+    <h1>Hello People</h1>
+    <h1>Hello People</h1>
+    {{ my_text2 }},{{ my_number2 }}
+{% endblock %}
+
